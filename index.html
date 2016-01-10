@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Basic Web Logging for Internal Temperature & Humidity Sensor DHT22 -->
+<html lang="en-AU">
+<!--Header Data -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Temperature and Pressure Logging Graph">
+    <meta name="Author" content="XXXXXXXX">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Jardine Street</title>
+    <style>
+      table { border:0;}
+    </style>
+  </head>
+
+<!-- HTML Body -->
+  <body>
+    <h1>Jardine Street - Kingston, ACT</h1>
+    <table>
+      <tr>
+      <td>
+        <input type="submit" name="refresh" value="Refresh Data" class="button" onclick="if(window.frames)window.frames['iframe_data'].location.reload();">
+      </td>
+      <td>
+        <form target="iframe_data" action="/../cgi-bin/daily.php"><input type="submit" value="1 Day"></form>
+      </td>
+      <td>
+        <form target="iframe_data" action="/../cgi-bin/weekly.php"><input type="submit" value="7 Days"></form>
+      </td>
+      <td>
+        <form target="iframe_data" action="/../cgi-bin/monthly.php"><input type="submit" value="30 Days"></form>
+      </td>
+      </tr>
+    </table>
+    <iframe src="blank.html" width="1120" height="500" style="border:none" id="iframe_data2" name="iframe_data2"></iframe>
+  </body>
+</html>
