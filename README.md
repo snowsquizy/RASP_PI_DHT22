@@ -10,7 +10,7 @@ Required Software
 * Python
 * PHP
 * Sqlite3
-* 
+  * CREATE TABLE weather (timestamp DATETIME, temperature NUMERIC, humidity NUMERIC);
 
 
 -- DHT22 Setup --
